@@ -7,7 +7,30 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="storeTable"></div>
+    <div id="container"></div>
     <script src="sales.js"></script>
   </body>
 </html>
+
+<form id="cookieForm">
+    <fieldset>
+      <legend>New Cookie Stand</legend>
+      
+      <!-- Input fields for the new cookie stand information -->
+      
+      <label for="location">Location:</label>
+      <input type="text" id="location" required>
+  
+      <label for="minCustomers">Minimum Customers per Hour:</label>
+      <input type="number" id="minCustomers" required>
+  
+      <label for="maxCustomers">Maximum Customers per Hour:</label>
+      <input type="number" id="maxCustomers" required>
+  
+      <label for="avgCookies">Average Cookies per Sale:</label>
+      <input type="number" id="avgCookies" required>
+  
+      <button type="submit">Add Cookie Stand</button>
+    </fieldset>
+  </form>
+  
