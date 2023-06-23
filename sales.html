@@ -7,30 +7,50 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="container"></div>
+    <div id="container">
+      <table id="myTable" border = "6">
+        <tr>
+          <th>Location</th>
+          <th>6am</th>
+          <th>7am</th>
+          <th>8am</th>
+          <th>9am</th>
+          <th>10am</th>
+          <th>11am</th>
+          <th>12pm</th>
+          <th>1pm</th>
+          <th>2pm</th>
+          <th>3pm</th>
+          <th>4pm</th>
+          <th>5pm</th>
+          <th>6pm</th>
+          <th>7pm</th>
+          <th>Total</th>
+        </tr>
+         --><
+      </table>
+    </div>
+    <p></p>
+    <div style="max-width: fit-content;">
+      <form id="new-store-form">
+        <fieldset>
+          <legend>Enter New Cookie Store:</legend>
+          <label for="name-input">Store Name:</label>
+          <input type="text" id="name-input" name="name" />
+          <p></p>
+          <label for="min-cust-input">Min Customers / Hour</label>
+          <input type="number" name="minCust" id="min-cust-input" />
+          <p></p>
+          <label for="max-cus-input">Max Customers / Hour</label>
+          <input type="number" name="maxCust" id="max-cust-input" />
+          <p></p>
+          <label for="avg-cookies-input">Average cookies Sold / per customer</label>
+          <input type="number" name="avgCookies" id="avg-cookies-input" step="0.1" min="0" />
+        </fieldset>
+        <button id="submit-button" type="submit">SUBMIT</button>
+      </form>
+    </div>
+    
     <script src="sales.js"></script>
   </body>
 </html>
-
-<form id="cookieForm">
-    <fieldset>
-      <legend>New Cookie Stand</legend>
-      
-      <!-- Input fields for the new cookie stand information -->
-      
-      <label for="location">Location:</label>
-      <input type="text" id="location" required>
-  
-      <label for="minCustomers">Minimum Customers per Hour:</label>
-      <input type="number" id="minCustomers" required>
-  
-      <label for="maxCustomers">Maximum Customers per Hour:</label>
-      <input type="number" id="maxCustomers" required>
-  
-      <label for="avgCookies">Average Cookies per Sale:</label>
-      <input type="number" id="avgCookies" required>
-  
-      <button type="submit">Add Cookie Stand</button>
-    </fieldset>
-  </form>
-  

@@ -122,14 +122,17 @@ h3 {
 }
 
 form{
-  margin-bottom: 2rem;
-  legen {
-    
+  margin-bottom: 2rem;  
   }
-
-fieldset {
-input
+  
+.table-bordered {
+  border-collapse: collapse;
+  width: 100%;
 }
 
-  };
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
 }
